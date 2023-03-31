@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Ghaly0xEx",
+    "description": "First 0x1 _extensions for education purpose",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": "icons/duck.png"
+    },
+
+
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+
+    
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        
+        "js": ["scripts/content.js"]
+      }
+    ],
+
+
+    "icons": {
+      "32":  "icons/duck.png",
+      "72":  "icons/duck.png",
+      "128": "icons/duck.png",
+      "512": "icons/duck.png"
+    }
+
+
+
+  }
