@@ -23,25 +23,11 @@ Extensions are event based programs used to modify or enhance the Chrome browsin
 
 A background page is loaded when it is needed, and unloaded when it goes idle. Some examples of events include:
 
-https://developer.chrome.com/docs/extensions/mv2/background_pages/
+https://developer.chrome.com/docs/extensions/mv3/background_pages/
 
 
-## Using  "persistent": true
+## GitHub samples
 
-```json
-
-{
-  "name": "Awesome Test Extension",
-  ...
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": true
-  },
-  ...
-}
-
-```
-
-The only occasion to keep a background script persistently active is if the extension uses chrome.webRequest API to block or modify network requests. The webRequest API is incompatible with non-persistent background pages.
+https://github.com/GoogleChrome/chrome-extensions-samples
 
 
